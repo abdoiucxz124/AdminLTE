@@ -1,0 +1,36 @@
+<% layout('layout', { title: 'Sites' }) %>
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Sites</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="container-fluid">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>URL</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% sites.forEach(site => { %>
+          <tr>
+            <td><%= site.id %></td>
+            <td><%= site.url %></td>
+            <td>
+              <a href="/sites/<%= site.id %>/posts" class="btn btn-sm btn-info">Posts</a>
+              <a href="/sites/<%= site.id %>/plugins" class="btn btn-sm btn-warning">Plugins</a>
+              <a href="/sites/<%= site.id %>/adx" class="btn btn-sm btn-success">AdX</a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</section>
