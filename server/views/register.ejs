@@ -1,0 +1,35 @@
+<% layout('layout', { title: 'Register' }) %>
+<div class="register-box mt-5">
+  <div class="card card-primary">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">Register a new user</p>
+      <form action="/register" method="post">
+        <div class="input-group mb-3">
+          <input type="text" name="username" class="form-control" placeholder="Username" required />
+          <div class="input-group-append">
+            <div class="input-group-text"><span class="bi bi-person"></span></div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" name="password" class="form-control" placeholder="Password" required />
+          <div class="input-group-append">
+            <div class="input-group-text"><span class="bi bi-lock"></span></div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <select name="role" class="form-select">
+            <option value="admin">Admin</option>
+            <option value="publisher">Publisher</option>
+            <option value="moderator">Moderator</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-8"></div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

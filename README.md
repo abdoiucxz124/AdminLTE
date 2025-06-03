@@ -61,3 +61,15 @@ AdminLTE.io reserves the right to change the license of future releases.
 - [Pickaface](https://pickaface.net/)
 - [Unsplash](https://unsplash.com/)
 - [Uifaces](http://uifaces.com/)
+
+## Centralized WordPress Dashboard
+
+This repository now includes a sample Express server in the `server/` directory.
+It demonstrates how to use AdminLTE as the UI for managing multiple WordPress
+sites. Features include:
+
+- User authentication with role-based permissions (Admin, Publisher, Moderator)
+- Retrieval of posts and plugin lists via the WordPress REST API
+- Integration with Google Ad Manager to fetch AdX reports
+
+Run `npm install` inside `server/` and start the dashboard with `npm start`.

@@ -1,0 +1,20 @@
+<% layout('layout', { title: 'Dashboard' }) %>
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Dashboard</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <p>Welcome, <%= user.username %>!</p>
+        <a href="/sites" class="btn btn-primary">Manage Sites</a>
+      </div>
+    </div>
+  </div>
+</section>
